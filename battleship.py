@@ -46,11 +46,14 @@ for turn in range(4):
 
     elif guess_row == ship_row and guess_col == ship_col:
         print "Congratulations! You sank my battleship!"
+        break
 
     elif board[guess_row][guess_col] == "X":
         print "You guessed that one already."
 
     else:
+        if turn == 3:
+            print "Game Over"
         print "You missed my battleship!"
         print ""
         board[guess_row][guess_col] = "X"
@@ -58,3 +61,4 @@ for turn in range(4):
         print ""
         print "Turn", (turn + 1)
         print ""
+        
