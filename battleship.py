@@ -7,6 +7,8 @@ turn = 0
 
 # welcome
 print 'Welcome to "Battleship: The game"' 
+print "Here's our sea:"
+print "You have 4 turns to sank my battleship"
 print ''
 #
 for x in range(0, 5):
